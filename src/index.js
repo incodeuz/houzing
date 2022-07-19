@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Context from "./context/context1";
 import "./index.css";
 import Root from "./root";
-
+import "antd/dist/antd.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

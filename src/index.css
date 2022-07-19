@@ -15,6 +15,8 @@ body {
   --primaryColor: #0d263b;
   --activeColor: #0061df;
   --secondaryColor: #696969;
+  --inputBorder: 1px solid #e6e9ec;
+  --inputBorderRadius: 2px;
 }
 
 .nocopy {

@@ -1,7 +1,18 @@
 import React, { memo } from "react";
 import { Container } from "./style";
 
-const Button = ({ children, onClick, width, height, type, ml, mr, mb, mt }) => {
+const Button = ({
+  children,
+  onClick,
+  width,
+  height,
+  type,
+  ml,
+  mar,
+  mb,
+  mt,
+  icon,
+}) => {
   return (
     <Container
       children={children}
@@ -12,7 +23,8 @@ const Button = ({ children, onClick, width, height, type, ml, mr, mb, mt }) => {
       ml={ml}
       mt={mt}
       mb={mb}
-      mr={mr}
+      mar={mar}
+      icon={icon}
     >
       {children}
     </Container>

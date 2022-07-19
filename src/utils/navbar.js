@@ -1,9 +1,10 @@
 import Generic from "../components/Generic";
+import Home from "../components/Home";
 
 export const navbar = [
   {
     id: 1,
-    element: <Generic />,
+    element: <Home />,
     mr: true,
     title: "Home",
     path: "/home",
