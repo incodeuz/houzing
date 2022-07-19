@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.2s linear;
 }
 
 :root {
@@ -26,4 +27,36 @@ body {
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #0d263b;
+}
+
+.subtitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #696969;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;               /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  /* background: orange;        color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primaryColor);    /* color of the scroll thumb */
+  /* border-radius: 20px;       roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
 }

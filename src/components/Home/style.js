@@ -6,6 +6,7 @@ const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   /* padding: 0 130px; */
+  transition: all 0.3s linear;
 `;
 
 export { Container };

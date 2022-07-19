@@ -1,10 +1,9 @@
 import { Carousel } from "antd";
 import styled from "styled-components";
-import { ReactComponent as LeftLogo } from "../../../assets/icons/left.svg";
-import { ReactComponent as RightLogo } from "../../../assets/icons/right.svg";
 
 const Container = styled.div`
   width: 100%;
+  margin-bottom: 96px;
 `;
 
 Container.Carousel = styled(Carousel)`
@@ -13,22 +12,24 @@ Container.Carousel = styled(Carousel)`
 `;
 
 const Img = styled.img`
-  height: 86vh;
+  height: 86.5vh;
   width: 100%;
   background-color: black;
 `;
 
-const Left = styled(LeftLogo)`
+const Left = styled.img`
   position: absolute;
   left: 100px;
   top: 53%;
   width: 45px;
   height: 45px;
-  background: #ffffff;
+  /* background: #ffffff; */
   border-radius: 50%;
   z-index: 9;
+  transform: rotate(180deg);
+  opacity: 0.7;
 `;
-const Right = styled(RightLogo)`
+const Right = styled.img`
   position: absolute;
   border-radius: 50%;
   background: #ffffff;
@@ -37,5 +38,8 @@ const Right = styled(RightLogo)`
   z-index: 9;
   width: 45px;
   height: 45px;
+  opacity: 0.7;
+
+  /* transform: rotate(180deg); */
 `;
 export { Container, Right, Left, Img };

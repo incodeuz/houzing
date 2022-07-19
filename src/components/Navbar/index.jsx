@@ -3,6 +3,8 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../../utils/navbar";
 import Button from "../Generic/Button";
 import { Container, LinkItem, Navbari, Wrapper } from "./style";
+import { ReactComponent as Hamburger } from "../../assets/icons/nav.svg";
+import { ReactComponent as User } from "../../assets/icons/user.svg";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -10,6 +12,7 @@ const Navbar = () => {
     <Wrapper>
       <Container>
         <Navbari>
+          <Hamburger className="mobile" />
           <Container.Logo />
           <Container.Wrapper>
             {navbar?.map((value) => {
@@ -25,6 +28,7 @@ const Navbar = () => {
           <Button width={"120px"} onClick={() => navigate("/signin")}>
             Login
           </Button>
+          <User className="mobile" />
         </Navbari>
       </Container>
       <Outlet />

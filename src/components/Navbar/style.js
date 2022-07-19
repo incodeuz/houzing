@@ -8,6 +8,15 @@ const Container = styled.div`
   justify-content: center;
   padding: 0 130px;
   background-color: var(--primaryColor);
+  .mobile {
+    display: none;
+  }
+  @media screen and (max-width: 870px) {
+    padding: 0 16px;
+    .mobile {
+      display: block;
+    }
+  }
 `;
 
 const Wrapper = styled.div`
@@ -33,6 +42,9 @@ Container.Wrapper = styled.div`
     transform: scale(1.2, 1.2);
     font-weight: 900;
   }
+  @media screen and (max-width: 870px) {
+    display: none;
+  }
 `;
 
 const LinkItem = styled(NavLink)`
@@ -44,7 +56,7 @@ const LinkItem = styled(NavLink)`
   line-height: 24px;
   color: #ffffff;
   text-decoration: none;
-
+  transition: all 0.3s linear;
   :hover {
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
@@ -80,6 +92,10 @@ const Navbari = styled.div`
   max-width: 1440px;
   width: 100%;
   height: 64px;
+  /* @media screen and (max-width: 870px) {
+    display: flex;
+    flex-direction: column;
+  } */
 `;
 
 export { Container, Wrapper, LinkItem, Navbari };

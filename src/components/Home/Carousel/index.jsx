@@ -4,14 +4,14 @@ import { Container, Img, Left, Right } from "./style";
 import HomeImg from "../../../assets/images/uy1.jpg";
 import HomeImg2 from "../../../assets/images/uy2.jpg";
 import HomeImg3 from "../../../assets/images/uy3.jpg";
-import { Content } from "antd/lib/layout/layout";
+import LeftLogo from "../../../assets/icons/next.png";
 
 const Carousel = () => {
   const sliderRef = useRef();
   return (
     <Container>
-      <Left onClick={() => sliderRef.current?.next()} />
-      <Right onClick={() => sliderRef.current?.prev()} />
+      <Left src={LeftLogo} onClick={() => sliderRef.current?.prev()} />
+      <Right src={LeftLogo} onClick={() => sliderRef.current?.next()} />
       <Container.Carousel ref={sliderRef} dots autoplay>
         <Img src={HomeImg} alt={"image"} />
         <Img src={HomeImg2} alt={"image"} />
